@@ -1,0 +1,36 @@
+git config --global user.name "mohammad-hosseini-s"
+git config --global user.email "mohammadhosseini@vt.edu"
+
+## Create a Branch ===============================================================================================
+git clone https://github.com/mohammad-hosseini-s/github-slideshow.git	# Clone the repository
+cd github-slideshow							# Navigate to the repository in your shell
+git branch BRANCH-NAME
+git branch --all							# List of all branches
+git push --set-upstream origin BRANCH-NAME				# Push the remote branch up to GitHub
+
+## Commit a File =================================================================================================
+git checkout BRANCH-NAME						# Check out to your branch
+git status								# Get the status of the project
+touch FILE NAME								# Create a new file (copy co for windows)
+cd ..									# Change directory back to previous one
+atom FILE NAME								# Have the file open by Atom (text editor)
+git add _posts/FILE NAME						# Stage your new file
+git commit -m "<YOUR-MESSAGE>"						# Add a message
+git push								# Push the file to Github
+git pull								# Gets everything down from Github to local
+
+## Merge a Pull Request ==========================================================================================
+git checkout master							# Check out to master branch
+git merge BRANCH NAME							# Merge your branch to the master branch
+git push								# Push the change to Github
+git branch -d BRANCH NAME						# Delete the branch locally
+
+## Upload a Project ==============================================================================================
+git init PROJCET NAME							# Initialize the directory as a Git repository
+touch .gitignore							# For the file you don't want to track
+git remote add origin https://github.com/mohammad-hosseini-s/github-upload.git
+git add .
+git commit -m "initializing repository"
+git push -u origin master
+	
+
