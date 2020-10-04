@@ -1,6 +1,6 @@
 Analytics II, Final
 ================
-SayedMohammad Hosseini (<mohammadhosseini@vt.edu>)
+Mohammad Hosseini (<mohammadhosseini@vt.edu>)
 
 -----
 
